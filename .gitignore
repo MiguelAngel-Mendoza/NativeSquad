@@ -58,4 +58,7 @@ Thumbs.db
 
 # Screenshots and temp local files in root
 /*.png
+/DOCX/
+*.docx
+
 
