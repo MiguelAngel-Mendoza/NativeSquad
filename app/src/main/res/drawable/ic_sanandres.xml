@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Sky -->
+  <path
+      android:fillColor="#00B4D8"
+      android:pathData="M0,0h200v120H0z"/>
+  <!-- Sea 7 colors gradations -->
+  <path
+      android:fillColor="#90E0EF"
+      android:pathData="M0,45h200v20H0z"/>
+  <path
+      android:fillColor="#48CAE4"
+      android:pathData="M0,65h200v20H0z"/>
+  <path
+      android:fillColor="#0077B6"
+      android:pathData="M0,85h200v20H0z"/>
+  <path
+      android:fillColor="#03045E"
+      android:pathData="M0,105h200v15H0z"/>
+  <!-- Island Cayo & Palm -->
+  <path
+      android:fillColor="#FFE6A7"
+      android:pathData="M130,70 Q165,60 195,75 L195,85 L130,85 Z"/>
+  <path
+      android:fillColor="#6F1D1B"
+      android:pathData="M165,40 Q168,55 170,70 h3 Q171,55 168,40 Z"/>
+  <path
+      android:fillColor="#43AA8B"
+      android:pathData="M165,40 C150,35 145,45 140,50 M165,40 C175,30 185,35 190,45 M165,40 C160,25 170,25 175,35"
+      android:strokeColor="#43AA8B"
+      android:strokeWidth="3"/>
+</vector>

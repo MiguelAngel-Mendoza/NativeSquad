@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Rocky background -->
+  <path
+      android:fillColor="#3D348B"
+      android:pathData="M0,0h200v120H0z"/>
+  <!-- River stream -->
+  <path
+      android:fillColor="#7678ED"
+      android:pathData="M0,30 Q60,10 100,50 T200,40 L200,120 L0,120 Z"/>
+  <!-- Pink Macarenia clavigera plants -->
+  <path
+      android:fillColor="#F72585"
+      android:pathData="M20,60 Q50,45 80,75 Q120,60 160,85 L180,110 L10,110 Z"/>
+  <!-- Bright Magenta / Red swirls -->
+  <path
+      android:fillColor="#B5179E"
+      android:pathData="M40,70 Q70,55 100,85 Q130,70 170,95 L170,120 L30,120 Z"/>
+  <!-- Golden aquatic streaks -->
+  <path
+      android:fillColor="#F8961E"
+      android:pathData="M60,80 Q90,65 120,95 L140,110 L50,110 Z"/>
+</vector>

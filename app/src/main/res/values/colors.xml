@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Principal Turismo & Aventura (Modo Oscuro Sofisticado) -->
+    <color name="bg_main">#0F172A</color>
+    <color name="bg_menu">#0B1120</color>
+    <color name="bg_card">#1E293B</color>
+    <color name="bg_card_elevated">#26334D</color>
+    <color name="bg_input">#0F172A</color>
+    
+    <!-- Colores de Acento y Marca -->
+    <color name="primary_teal">#00BFA5</color>
+    <color name="primary_teal_variant">#00897B</color>
+    <color name="teal_glow">#3300BFA5</color>
+    
+    <color name="accent_coral">#FF5722</color>
+    <color name="accent_amber">#FFB300</color>
+    <color name="accent_blue">#38BDF8</color>
+    <color name="accent_green">#10B981</color>
+    <color name="accent_purple">#A855F7</color>
+
+    <!-- Tipografía y Estados -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+    <color name="text_on_primary">#0F172A</color>
+    <color name="divider_color">#1E293B</color>
+    <color name="border_stroke">#334155</color>
+    
+    <!-- Estados de selección del menú -->
+    <color name="menu_item_normal">#1E293B</color>
+    <color name="menu_item_selected">#00BFA5</color>
+    <color name="menu_item_selected_bg">#1A00BFA5</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Sky -->
+  <path
+      android:fillColor="#FF7A59"
+      android:pathData="M0,0h200v120H0z"/>
+  <!-- Sun -->
+  <path
+      android:fillColor="#FFD166"
+      android:pathData="M160,35m-20,0a20,20 0 1,0 40,0a20,20 0 1,0 -40,0"/>
+  <!-- Sea -->
+  <path
+      android:fillColor="#06D6A0"
+      android:pathData="M0,65h200v55H0z"/>
+  <!-- Colonial Wall -->
+  <path
+      android:fillColor="#264653"
+      android:pathData="M0,80h200v40H0z"/>
+  <path
+      android:fillColor="#E76F51"
+      android:pathData="M15,60h25v20H15z M50,65h20v15H50z M80,60h30v20H80z M120,65h25v15H120z M155,55h30v25H155z"/>
+  <!-- Turret / Garita -->
+  <path
+      android:fillColor="#2A9D8F"
+      android:pathData="M165,42h10v13h-10z M160,55h20v5h-20z"/>
+</vector>

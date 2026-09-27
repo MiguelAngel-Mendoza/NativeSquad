@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">NativeSquad - Guía de Viajes</string>
+    <string name="app_tagline">Explora Colombia y el Mundo</string>
+    <string name="team_name">NativeSquad HPM</string>
+    <string name="institution_name">Politécnico Grancolombiano</string>
+    
+    <!-- Opciones del Menú Lateral -->
+    <string name="menu_bitacora">Bitácora</string>
+    <string name="menu_destinos">Destinos</string>
+    <string name="menu_experiencias">Experiencias</string>
+    <string name="menu_portal_web">Portal Web</string>
+    <string name="menu_acciones">Acciones</string>
+
+    <!-- Subtítulos de Menú -->
+    <string name="menu_sub_bitacora">Perfil &amp; Rutas</string>
+    <string name="menu_sub_destinos">Galería de Fotos</string>
+    <string name="menu_sub_experiencias">Videos de Viaje</string>
+    <string name="menu_sub_portal_web">Navegador Web</string>
+    <string name="menu_sub_acciones">Controles y Botones</string>
+
+    <!-- Textos de Bitácora (Perfil) -->
+    <string name="bitacora_title">Bitácora de Viajes &amp; Perfil</string>
+    <string name="bitacora_subtitle">Sistema Institucional de Gestión y Registro Turístico</string>
+    <string name="bitacora_summary">NativeSquad HPM es una plataforma móvil diseñada bajo estándares nativos de Android con arquitectura modular de dos fragmentos sincronizados. Este módulo consolida el perfil institucional, métricas de exploración, rutas verificadas y bitácoras de campo de nuestros expedicionarios.</string>
+    <string name="team_header">Equipo de Desarrollo (NativeSquad)</string>
+    <string name="stat_destinations_val">24</string>
+    <string name="stat_destinations_lbl">Destinos</string>
+    <string name="stat_routes_val">18</string>
+    <string name="stat_routes_lbl">Rutas Activas</string>
+    <string name="stat_rating_val">4.9 ★</string>
+    <string name="stat_rating_lbl">Calificación</string>
+    <string name="stat_guides_val">12</string>
+    <string name="stat_guides_lbl">Guías</string>
+
+    <!-- Textos de Destinos (Fotos) -->
+    <string name="destinos_title">Destinos Turísticos</string>
+    <string name="destinos_subtitle">Toca cualquier tarjeta para consultar su información histórica y geográfica detallada</string>
+    <string name="destinos_detail_hint">Selecciona una imagen de la galería</string>
+
+    <!-- Textos de Experiencias (Video) -->
+    <string name="experiencias_title">Experiencias Multimedia</string>
+    <string name="experiencias_subtitle">Reproductor de video integrado con controles nativos de reproducción</string>
+    <string name="video_btn_play">Reproducir</string>
+    <string name="video_btn_pause">Pausar</string>
+    <string name="video_btn_replay">Reiniciar</string>
+
+    <!-- Textos de Portal Web -->
+    <string name="portal_title">Portal Web Turístico</string>
+    <string name="portal_subtitle">Navegador web integrado para consultar recursos y sitios oficiales</string>
+    <string name="portal_url_hint">Ingresa la URL (ej: https://colombia.travel)</string>
+    <string name="portal_btn_go">Cargar</string>
+    <string name="portal_btn_clear">Limpiar</string>
+
+    <!-- Textos de Acciones (Botones) -->
+    <string name="acciones_title">Panel de Acciones Interactivas</string>
+    <string name="acciones_subtitle">Demostración avanzada de controles de botones y gestión de eventos en tiempo real</string>
+</resources>

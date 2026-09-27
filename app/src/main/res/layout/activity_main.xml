@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    tools:context=".MainActivity">
+
+    <!-- Barra Superior con Botón de Torta / Hamburguesa para Ocultar/Mostrar Menú -->
+    <LinearLayout
+        android:id="@+id/top_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bg_menu"
+        android:paddingHorizontal="10dp"
+        android:elevation="4dp">
+
+        <!-- Botón de Torta / Menú Hamburguesa -->
+        <ImageButton
+            android:id="@+id/btn_toggle_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menu_toggle"
+            android:tint="@color/primary_teal"
+            android:padding="8dp"
+            android:contentDescription="Ocultar o Mostrar Menú Lateral" />
+
+        <TextView
+            android:id="@+id/tv_top_bar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="NativeSquad HPM • Guía de Viajes"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Indicador de estado del menú -->
+        <TextView
+            android:id="@+id/tv_menu_toggle_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_pill"
+            android:text="Menú Visible"
+            android:textColor="@color/primary_teal"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_stroke" />
+
+    <!-- Contenedor Principal Dividido en Dos Secciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- FRAGMENTO IZQUIERDO: Panel de Navegación Lateral (MenuFragment) -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_menu_container"
+            android:name="com.nativesquad.guiadeviajes.fragments.MenuFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            tools:layout="@layout/fragment_menu" />
+
+        <!-- Divisor vertical decorativo -->
+        <View
+            android:id="@+id/menu_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/border_stroke" />
+
+        <!-- FRAGMENTO DERECHO: Contenedor Dinámico de Submódulos -->
+        <FrameLayout
+            android:id="@+id/fragment_contenedor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68"
+            android:background="@color/bg_main">
+            <!-- Los fragmentos (Bitacora, Destinos, Experiencias, PortalWeb, Acciones) se insertan dinámicamente aquí -->
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

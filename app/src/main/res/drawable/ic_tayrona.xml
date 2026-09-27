@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Sky -->
+  <path
+      android:fillColor="#48CAE4"
+      android:pathData="M0,0h200v120H0z"/>
+  <!-- Jungle Hill -->
+  <path
+      android:fillColor="#0077B6"
+      android:pathData="M0,50 Q70,10 150,60 L200,40 L200,120 L0,120 Z"/>
+  <!-- Beach & Bay -->
+  <path
+      android:fillColor="#0096C7"
+      android:pathData="M0,75 Q100,55 200,85 L200,120 L0,120 Z"/>
+  <!-- Golden Sand -->
+  <path
+      android:fillColor="#E9D8A6"
+      android:pathData="M0,95 Q100,80 200,100 L200,120 L0,120 Z"/>
+  <!-- Iconic Tayrona Boulder / Rocks -->
+  <path
+      android:fillColor="#0A9396"
+      android:pathData="M30,85 C20,85 15,98 25,108 C35,118 55,115 55,100 C55,88 40,85 30,85 Z"/>
+  <path
+      android:fillColor="#005F73"
+      android:pathData="M140,90 C130,90 125,102 135,112 C145,122 165,118 165,105 C165,92 150,90 140,90 Z"/>
+</vector>

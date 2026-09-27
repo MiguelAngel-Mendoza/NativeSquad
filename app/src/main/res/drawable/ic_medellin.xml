@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Sunset Sky -->
+  <path
+      android:fillColor="#4A0E4E"
+      android:pathData="M0,0h200v120H0z"/>
+  <path
+      android:fillColor="#811776"
+      android:pathData="M0,30h200v90H0z"/>
+  <!-- Mountain backdrop (Aburrá Valley) -->
+  <path
+      android:fillColor="#2B0938"
+      android:pathData="M0,60 L50,30 L110,65 L160,25 L200,55 L200,120 L0,120 Z"/>
+  <!-- City Skyline buildings -->
+  <path
+      android:fillColor="#1D0029"
+      android:pathData="M20,65h15v55h-15z M45,50h20v70h-20z M75,70h12v50h-12z M95,40h25v80h-25z M130,55h18v65h-18z M155,45h22v75h-22z M185,60h15v60h-15z"/>
+  <!-- Cable car line (Metrocable) -->
+  <path
+      android:pathData="M0,20 L200,70"
+      android:strokeColor="#FFD166"
+      android:strokeWidth="1.5"/>
+  <!-- Cabin -->
+  <path
+      android:fillColor="#FF5722"
+      android:pathData="M95,45h10v8h-10z"/>
+</vector>

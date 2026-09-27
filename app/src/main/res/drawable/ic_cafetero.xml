@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="120">
+  <!-- Sky -->
+  <path
+      android:fillColor="#80ED99"
+      android:pathData="M0,0h200v120H0z"/>
+  <!-- Mountain layer 1 -->
+  <path
+      android:fillColor="#57CC99"
+      android:pathData="M0,70 L60,30 L130,80 L200,35 L200,120 L0,120 Z"/>
+  <!-- Mountain layer 2 -->
+  <path
+      android:fillColor="#38A3A5"
+      android:pathData="M0,85 L80,50 L160,95 L200,70 L200,120 L0,120 Z"/>
+  <!-- Foreground Hill -->
+  <path
+      android:fillColor="#22577A"
+      android:pathData="M0,100 Q100,75 200,105 L200,120 L0,120 Z"/>
+  <!-- Wax Palms (Palmas de Cera) -->
+  <path
+      android:fillColor="#1B4332"
+      android:pathData="M45,35h3v65h-3z M46.5,35m-12,0a12,12 0 1,0 24,0a12,12 0 1,0 -24,0 M140,45h2.5v55h-2.5z M141.2,45m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0"/>
+</vector>
