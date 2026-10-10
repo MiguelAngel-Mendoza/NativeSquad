@@ -116,25 +116,7 @@
                             android:id="@+id/btn_chip_miguel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="6dp"
                             android:text="Miguel Mendoza"
-                            android:textSize="10sp"
-                            style="@style/Widget.NativeSquad.Button.Secondary" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btn_chip_juan"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="6dp"
-                            android:text="Juan Muñoz"
-                            android:textSize="10sp"
-                            style="@style/Widget.NativeSquad.Button.Secondary" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btn_chip_julio"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Julio Murillo"
                             android:textSize="10sp"
                             style="@style/Widget.NativeSquad.Button.Secondary" />
 
