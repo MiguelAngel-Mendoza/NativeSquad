@@ -1,4 +1,4 @@
-# NativeSquad - Guía de Viajes Turísticos (HPM) ✈️🇨🇴
+# NativeSquad - Guía de Viajes Turísticos (HPM)
 ### Proyecto Final: Entrega 3 y Sustentación (Semanas 7 y 8)
 
 Aplicación móvil nativa para el sistema operativo **Android** desarrollada para el módulo de **Herramientas de Programación Móvil I** de la **Institución Universitaria Politécnico Grancolombiano**.
