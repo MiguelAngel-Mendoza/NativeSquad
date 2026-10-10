@@ -44,7 +44,7 @@ graph TD
 
 ---
 
-## 🚀 Trazabilidad Estricta con la Rúbrica de Evaluación (Entrega Final)
+## Trazabilidad Estricta con la Rúbrica de Evaluación (Entrega Final)
 
 | Opción de Menú (Izquierdo) | Submódulo Android (Derecho) | Componentes Clave | Requerimiento Oficial de la Rúbrica |
 | :--- | :--- | :--- | :--- |
