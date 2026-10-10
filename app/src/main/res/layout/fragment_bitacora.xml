@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header Card: Perfil Institucional y de Guía -->
+        <!-- Header Card: Perfil Personal y Fotografía (Rúbrica RF-02) -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,17 +31,20 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+                <!-- Fila con Foto de Perfil y Datos Personales Básicos -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center_vertical">
 
+                    <!-- Fotografía de la Persona -->
                     <ImageView
-                        android:layout_width="56dp"
-                        android:layout_height="56dp"
-                        android:src="@drawable/ic_logo_travel"
-                        android:contentDescription="Perfil Logo" />
+                        android:id="@+id/img_perfil_foto"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_avatar_person"
+                        android:contentDescription="Fotografía del Perfil" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -51,46 +54,313 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_bitacora_title"
+                            android:id="@+id/tv_perfil_nombre"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NativeSquad HPM"
+                            android:text="Sandra Milena Millan Alvarez"
                             android:textColor="@color/text_primary"
-                            android:textSize="18sp"
+                            android:textSize="17sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tv_bitacora_sub"
+                            android:id="@+id/tv_perfil_rol"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Guía Integral de Viajes &amp; Ecoturismo"
+                            android:layout_marginTop="2dp"
+                            android:text="Ingeniera de Sistemas • Desarrolladora Android"
                             android:textColor="@color/primary_teal"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/tv_perfil_institucion"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Politécnico Grancolombiano • 2026"
+                            android:layout_marginTop="2dp"
+                            android:text="Politécnico Grancolombiano • Bogotá, Colombia"
                             android:textColor="@color/text_muted"
                             android:textSize="11sp" />
                     </LinearLayout>
                 </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/border_stroke"
+                <!-- Selector Interactivo de Integrantes del Equipo -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:layout_marginBottom="12dp" />
+                    android:text="Seleccionar integrante del equipo para consultar perfil:"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
 
-                <!-- Métricas estadísticas de rutas y perfiles -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_chip_sandra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:text="Sandra Millan"
+                            android:textSize="10sp"
+                            style="@style/Widget.NativeSquad.Button.Primary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_chip_miguel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:text="Miguel Mendoza"
+                            android:textSize="10sp"
+                            style="@style/Widget.NativeSquad.Button.Secondary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_chip_juan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:text="Juan Muñoz"
+                            android:textSize="10sp"
+                            style="@style/Widget.NativeSquad.Button.Secondary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_chip_julio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Julio Murillo"
+                            android:textSize="10sp"
+                            style="@style/Widget.NativeSquad.Button.Secondary" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: ESTUDIOS Y FORMACIÓN ACADÉMICA (Con ScrollView interna para optimizar pantalla) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="14dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🎓 Estudios y Formación Académica"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_badge_pill"
+                        android:text="Scroll activo"
+                        android:textColor="@color/primary_teal"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Campo tipo texto optimizado con barra de desplazamiento vertical:"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
+
+                <!-- Contenedor con ScrollView vertical dedicada para optimizar la pantalla -->
+                <ScrollView
+                    android:id="@+id/scroll_estudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/bg_input"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarThumbVertical="@color/primary_teal">
+
+                    <TextView
+                        android:id="@+id/tv_perfil_estudios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:text="• Ingeniería de Sistemas - Institución Universitaria Politécnico Grancolombiano (En curso, 2023 - 2026).\n\n• Diplomado en Arquitectura de Software y Desarrollo de Soluciones Móviles (Politécnico Grancolombiano, 2026).\n\n• Certificación Oficial: Google Developers - Android Basics in Java &amp; Kotlin (2025).\n\n• Curso Especializado en Diseño de Interfaces Móviles (UI/UX) con Google Material Design 3 (2025).\n\n• Certificado en Fundamentos de Bases de Datos Relacionales y SQLite/Room para Android (2024)."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: EXPERIENCIA PROFESIONAL Y PROYECTOS (Con ScrollView interna para optimizar pantalla) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="14dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="💼 Experiencia Profesional &amp; Proyectos"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_badge_pill"
+                        android:text="Scroll activo"
+                        android:textColor="@color/primary_teal"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Campo tipo texto optimizado con barra de desplazamiento vertical:"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
+
+                <!-- Contenedor con ScrollView vertical dedicada para optimizar la pantalla -->
+                <ScrollView
+                    android:id="@+id/scroll_experiencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/bg_input"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarThumbVertical="@color/accent_coral">
+
+                    <TextView
+                        android:id="@+id/tv_perfil_experiencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:text="• Desarrolladora Android Líder - NativeSquad HPM (2026):\nImplementación de la arquitectura modular de doble fragmento sincronizado, integración de controladores multimedia (VideoView y MediaController), navegador WebView interno y gestión de eventos de interfaz táctil.\n\n• Ingeniera de Software Junior - Soluciones Móviles (2025 - Presente):\nDiseño y maquetación de interfaces responsivas con LinearLayout, ConstraintLayout y CardView. Aplicación de buenas prácticas de ciclo de vida en Android.\n\n• Desarrolladora Full-Stack en Proyectos Académicos Poli (2024 - 2025):\nConstrucción de aplicaciones distribuidas, consumo de APIs RESTful, diseño de modelos relacionales y flujos colaborativos Git/GitHub."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: BIOGRAFÍA EXTENSA Y ENFOQUE PROFESIONAL -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="14dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📝 Biografía &amp; Perfil Profesional"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:id="@+id/scroll_biografia"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/bg_input"
+                    android:padding="8dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarThumbVertical="@color/accent_blue">
+
+                    <TextView
+                        android:id="@+id/tv_perfil_biografia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="3dp"
+                        android:text="Profesional proactiva con sólida formación en ingeniería de sistemas, especializada en el desarrollo de software nativo para plataformas móviles y ecoturismo sostenible. Apasionada por diseñar experiencias intuitivas, arquitecturas limpias y código altamente mantenible que resuelvan necesidades reales en la comunidad."
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                </ScrollView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: Métricas e Identidad del Proyecto NativeSquad HPM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="14dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📊 Estadísticas del Expedicionario &amp; Proyecto"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
                     android:weightSum="4">
 
-                    <!-- Stat 1 -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -114,7 +384,6 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <!-- Stat 2 -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -138,7 +407,6 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <!-- Stat 3 -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -162,7 +430,6 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <!-- Stat 4 -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -188,115 +455,13 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Card: Equipo de Desarrollo y Docencia -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/bg_card"
-            app:cardCornerRadius="14dp"
-            android:layout_marginBottom="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Equipo de Desarrollo &amp; Créditos"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:lineSpacingExtra="3dp"
-                    android:text="• Sandra Milena Millan Alvarez\n• Miguel Angel Mendoza Niño\n• Juan José Muñoz Valencia\n• Julio Ernesto Murillo Cocunubo\n\nTutor: Víctor Fabián Castro Pérez\nFacultad de Ingeniería, Diseño e Innovación"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Card: Resumen de la Bitácora y Filosofía de Viaje (Texto Extenso) -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/bg_card"
-            app:cardCornerRadius="14dp"
-            android:layout_marginBottom="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Filosofía &amp; Manifiesto de Expedición"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:lineSpacingExtra="4dp"
-                    android:text="Nuestra bitácora de viaje nace con el propósito de conectar a viajeros apasionados con la inmensa riqueza biológica, cultural e histórica de Colombia. Desde las cálidas costas caribeñas de Cartagena y San Andrés, atravesando los mágicos valles cafetaleros andinos, hasta llegar a santuarios vírgenes como Caño Cristales y el Parque Tayrona.\n\nPromovemos un turismo responsable y consciente que minimiza la huella ecológica, apoya a las economías comunitarias locales y fomenta la conservación de ecosistemas frágiles."
-                    android:textColor="@color/text_secondary"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Card: Consejos de Viaje y Protocolos de Seguridad -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/bg_card"
-            app:cardCornerRadius="14dp"
-            android:layout_marginBottom="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Recomendaciones para el Viajero"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:lineSpacingExtra="4dp"
-                    android:text="1. Vacunación: Se aconseja portar carnet de vacuna contra la Fiebre Amarilla para expediciones en Tayrona y la Amazonía/Orinoquía.\n\n2. Hidratación: En destinos de alta temperatura, mantén siempre hidratación constante con sales o agua potable.\n\n3. Respeto Cultural: En territorios indígenas de la Sierra Nevada, solicita siempre autorización antes de realizar fotografías.\n\n4. Conectividad: Descarga tus mapas y bitácoras con antelación para zonas con cobertura móvil limitada."
-                    android:textColor="@color/text_secondary"
-                    android:textSize="12sp" />
-
-                <!-- Botón de interacción en Bitácora -->
+                <!-- Botón de interacción en Perfil -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_bitacora_action"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="Descargar Bitácora Oficial"
+                    android:layout_marginTop="14dp"
+                    android:text="📄 Descargar Hoja de Vida / Ficha de Perfil"
                     style="@style/Widget.NativeSquad.Button.Primary" />
 
             </LinearLayout>

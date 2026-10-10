@@ -4,19 +4,31 @@
     <string name="team_name">NativeSquad HPM</string>
     <string name="institution_name">Politécnico Grancolombiano</string>
     
-    <!-- Opciones del Menú Lateral -->
-    <string name="menu_bitacora">Bitácora</string>
-    <string name="menu_destinos">Destinos</string>
-    <string name="menu_experiencias">Experiencias</string>
-    <string name="menu_portal_web">Portal Web</string>
-    <string name="menu_acciones">Acciones</string>
+    <!-- Opciones del Menú Lateral (Rúbrica Entrega 3: Perfil, Fotos, Video, Web, Botones) -->
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_fotos">Fotos</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_botones">Botones</string>
+
+    <string name="menu_bitacora">Perfil</string>
+    <string name="menu_destinos">Fotos</string>
+    <string name="menu_experiencias">Video</string>
+    <string name="menu_portal_web">Web</string>
+    <string name="menu_acciones">Botones</string>
 
     <!-- Subtítulos de Menú -->
-    <string name="menu_sub_bitacora">Perfil &amp; Rutas</string>
-    <string name="menu_sub_destinos">Galería de Fotos</string>
-    <string name="menu_sub_experiencias">Videos de Viaje</string>
-    <string name="menu_sub_portal_web">Navegador Web</string>
-    <string name="menu_sub_acciones">Controles y Botones</string>
+    <string name="menu_sub_perfil">Foto, Estudios &amp; Exp.</string>
+    <string name="menu_sub_fotos">Galería con Scroll</string>
+    <string name="menu_sub_video">Video con Controles</string>
+    <string name="menu_sub_web">Navegador Web URL</string>
+    <string name="menu_sub_botones">Ejemplos de Botones</string>
+
+    <string name="menu_sub_bitacora">Foto, Estudios &amp; Exp.</string>
+    <string name="menu_sub_destinos">Galería con Scroll</string>
+    <string name="menu_sub_experiencias">Video con Controles</string>
+    <string name="menu_sub_portal_web">Navegador Web URL</string>
+    <string name="menu_sub_acciones">Ejemplos de Botones</string>
 
     <!-- Textos de Bitácora (Perfil) -->
     <string name="bitacora_title">Bitácora de Viajes &amp; Perfil</string>

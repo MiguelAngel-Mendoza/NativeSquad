@@ -77,7 +77,7 @@
                     android:id="@+id/icon_menu_bitacora"
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:src="@drawable/ic_bitacora"
+                    android:src="@drawable/ic_perfil"
                     android:tint="@color/primary_teal" />
 
                 <TextView

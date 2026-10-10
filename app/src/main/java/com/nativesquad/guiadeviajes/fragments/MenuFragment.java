@@ -22,11 +22,19 @@ import com.nativesquad.guiadeviajes.R;
  */
 public class MenuFragment extends Fragment {
 
-    public static final int OPTION_BITACORA = 0;
-    public static final int OPTION_DESTINOS = 1;
-    public static final int OPTION_EXPERIENCIAS = 2;
-    public static final int OPTION_PORTAL_WEB = 3;
-    public static final int OPTION_ACCIONES = 4;
+    // Opciones del Menú (Rúbrica Oficial Entrega 3: Perfil, Fotos, Video, Web, Botones)
+    public static final int OPTION_PERFIL = 0;
+    public static final int OPTION_FOTOS = 1;
+    public static final int OPTION_VIDEO = 2;
+    public static final int OPTION_WEB = 3;
+    public static final int OPTION_BOTONES = 4;
+
+    // Compatibilidad retroactiva con nomenclatura de módulos turísticos
+    public static final int OPTION_BITACORA = OPTION_PERFIL;
+    public static final int OPTION_DESTINOS = OPTION_FOTOS;
+    public static final int OPTION_EXPERIENCIAS = OPTION_VIDEO;
+    public static final int OPTION_PORTAL_WEB = OPTION_WEB;
+    public static final int OPTION_ACCIONES = OPTION_BOTONES;
 
     public interface OnMenuOptionSelectedListener {
         void onOptionSelected(int optionId);
