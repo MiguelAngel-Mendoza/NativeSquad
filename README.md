@@ -56,12 +56,9 @@ graph TD
 
 ---
 
-## 📄 Documentación Oficial de la Entrega 3
+## Documentación de la Entrega 3
 
-Los documentos consolidados con todo el código XML, código Java, diagramas, capturas y guion de sustentación se ubican en la carpeta `DOCX/`:
-
-* 📘 **Documento Maestro en Markdown:** [`DOCX/ENTREGA_3_FINAL_NATIVESQUAD.md`](DOCX/ENTREGA_3_FINAL_NATIVESQUAD.md)
-* 📕 **Documento Oficial en Formato Word:** [`DOCX/Entrega_3_Final_Semanas_7_y_8_NativeSquad.docx`](DOCX/Entrega_3_Final_Semanas_7_y_8_NativeSquad.docx)
+El proyecto cuenta con el documento final consolidado (entregado mediante la plataforma institucional) que incluye:
 
 ### Estructura del Documento Entregable:
 * **Sección A:** Documento de la Entrega 1 (Introducción, justificación, objetivos, requerimientos RF/RNF, arquitectura y wireframes).

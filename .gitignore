@@ -56,11 +56,12 @@ captures/
 .DS_Store
 Thumbs.db
 
+# Local documentation folder (informes y entregables universitarios)
+DOCX/
+/DOCX/
+
 # Screenshots and temp local files in root
 /*.png
-!/DOCX/pantallazos/*
-!/DOCX/pantallazos/*.png
-/DOCX/*.docx
 *.docx
 
 
