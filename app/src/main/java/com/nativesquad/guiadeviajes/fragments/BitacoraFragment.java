@@ -22,7 +22,7 @@ import com.nativesquad.guiadeviajes.R;
  * Módulo de Perfil del Usuario / Desarrollador (Rúbrica Entrega 3 - RF-02).
  * Requerimiento: Muestra el perfil de una persona (Foto, estudios, experiencia, etc.
  * Para los campos tipo texto utilicen barra de desplazamiento para optimizar la pantalla).
- * Además, permite alternar dinámicamente entre los 4 integrantes del equipo NativeSquad HPM.
+ * Además, permite alternar dinámicamente entre los 3 integrantes del equipo NativeSquad HPM.
  */
 public class BitacoraFragment extends Fragment {
 
@@ -35,6 +35,7 @@ public class BitacoraFragment extends Fragment {
     // Chips de selección de integrantes
     private MaterialButton btnChipSandra;
     private MaterialButton btnChipMiguel;
+    private MaterialButton btnChipJuan;
 
     // Campos de texto extensos con ScrollView interna
     private ScrollView scrollEstudios;
@@ -72,6 +73,7 @@ public class BitacoraFragment extends Fragment {
 
         btnChipSandra = root.findViewById(R.id.btn_chip_sandra);
         btnChipMiguel = root.findViewById(R.id.btn_chip_miguel);
+        btnChipJuan = root.findViewById(R.id.btn_chip_juan);
 
         scrollEstudios = root.findViewById(R.id.scroll_estudios);
         scrollExperiencia = root.findViewById(R.id.scroll_experiencia);
@@ -90,6 +92,7 @@ public class BitacoraFragment extends Fragment {
     private void setupEvents() {
         btnChipSandra.setOnClickListener(v -> cargarPerfil(0));
         btnChipMiguel.setOnClickListener(v -> cargarPerfil(1));
+        btnChipJuan.setOnClickListener(v -> cargarPerfil(2));
 
         if (btnDownloadAction != null) {
             btnDownloadAction.setOnClickListener(v -> {
@@ -105,7 +108,7 @@ public class BitacoraFragment extends Fragment {
      * Carga dinámicamente los datos de perfil de cada integrante del equipo NativeSquad HPM
      * demostrando reactividad de interfaz y optimización con scroll.
      *
-     * @param index Índice del integrante (0: Sandra, 1: Miguel)
+     * @param index Índice del integrante (0: Sandra, 1: Miguel, 2: Juan)
      */
     private void cargarPerfil(int index) {
         resetChipStyles();
@@ -148,6 +151,22 @@ public class BitacoraFragment extends Fragment {
                         "Mantenimiento del repositorio oficial de NativeSquad y desarrollo de pruebas unitarias.");
                 tvPerfilBiografia.setText("Ingeniero en formación con pasión por los sistemas distribuidos, desarrollo móvil nativo en Java y optimización de datos. Enfocado en la entrega de soluciones de software de alto impacto y calidad.");
                 break;
+
+            case 2:
+                highlightChip(btnChipJuan);
+                tvPerfilNombre.setText("Juan José Muñoz Valencia");
+                tvPerfilRol.setText("Ingeniero de Sistemas • Desarrollador Móvil & Multimedia");
+                tvPerfilInstitucion.setText("Politécnico Grancolombiano • Bogotá, Colombia");
+                tvPerfilEstudios.setText("• Ingeniería de Sistemas - Institución Universitaria Politécnico Grancolombiano (En curso, 2023 - 2026).\n\n" +
+                        "• Curso de Especialización en Manejo de Componentes Multimedia en Android (VideoView, MediaPlayer, Canvas) (2025).\n\n" +
+                        "• Certificación en Buenas Prácticas de Programación Limpia (Clean Code) y Principios SOLID (2025).\n\n" +
+                        "• Formación en Optimización de Recursos Gráficos y Renderizado Móvil (2024).");
+                tvPerfilExperiencia.setText("• Especialista Multimedia y Eventos - NativeSquad HPM (2026):\n" +
+                        "Diseño de la experiencia interactiva del reproductor de video local, controles de reproducción (Play, Pausa, Replay) y configuración de MediaController.\n\n" +
+                        "• Desarrollador Frontend y Móvil (2025 - Presente):\n" +
+                        "Creación de animaciones suaves (Fade In, Fade Out) y diseño visual de componentes táctiles.");
+                tvPerfilBiografia.setText("Desarrollador enfocado en la interacción del usuario y la fluidez audiovisual de aplicaciones móviles, garantizando tiempos de carga óptimos y respuesta táctil inmediata.");
+                break;
         }
 
         // Reiniciar el scroll de los textos al inicio al cambiar de perfil
@@ -160,6 +179,7 @@ public class BitacoraFragment extends Fragment {
         if (getContext() == null) return;
         setChipStyle(btnChipSandra, false);
         setChipStyle(btnChipMiguel, false);
+        setChipStyle(btnChipJuan, false);
     }
 
     private void highlightChip(MaterialButton btn) {

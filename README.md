@@ -9,6 +9,7 @@ Aplicación móvil nativa para el sistema operativo **Android** desarrollada par
 
 * **Sandra Milena Millan Alvarez**
 * **Miguel Angel Mendoza Niño**
+* **Juan José Muñoz Valencia**
 
 **Docente / Tutor:** Víctor Fabián Castro Pérez  
 **Facultad:** Facultad de Ingeniería, Diseño e Innovación  
@@ -46,7 +47,7 @@ graph TD
 
 | Opción de Menú (Izquierdo) | Submódulo Android (Derecho) | Componentes Clave | Requerimiento Oficial de la Rúbrica |
 | :--- | :--- | :--- | :--- |
-| **Perfil** | `BitacoraFragment` | `ImageView`, `ScrollView`, `CardView`, `TextView` | **Muestra el perfil de una persona:** Fotografía de perfil, datos personales, formación académica y experiencia laboral. Incluye barras de desplazamiento vertical (`ScrollView`) en los campos tipo texto para optimizar la pantalla, junto con un selector dinámico para consultar los perfiles del equipo. |
+| **Perfil** | `BitacoraFragment` | `ImageView`, `ScrollView`, `CardView`, `TextView` | **Muestra el perfil de una persona:** Fotografía de perfil, datos personales, formación académica y experiencia laboral. Incluye barras de desplazamiento vertical (`ScrollView`) en los campos tipo texto para optimizar la pantalla, junto con un selector dinámico para consultar los 3 perfiles del equipo. |
 | **Fotos** | `DestinosFragment` | `RecyclerView`, `ImageView`, `CardView`, `ScrollView` | **Lista de imágenes con barra de desplazamiento (scroll):** Galería fotográfica vertical en `RecyclerView` que muestra la descripción detallada (historia, geografía, clima y actividades) de cada imagen en un panel superior al ser seleccionada. |
 | **Video** | `ExperienciasFragment` | `VideoView`, `MediaController`, `ProgressBar`, `MaterialButton` | **Muestra un video con sus controles de reproducción:** Reproductor nativo `VideoView` con barra táctil `MediaController`, controles programáticos (Play, Pausa, Replay) y selector de clips HD locales desde `res/raw`. |
 | **Web** | `PortalWebFragment` | `EditText`, `MaterialButton`, `WebView`, `ProgressBar` | **Permite cargar una página Web cuya URL se digita en una caja de texto:** Barra de dirección editable, botón Cargar, `WebViewClient` interno para retener la navegación en la app, barra de progreso y marcadores de acceso rápido. |
@@ -64,7 +65,7 @@ El proyecto cuenta con el documento final consolidado (entregado mediante la pla
 * **Sección C:** Interfaz gráfica junto con su código XML completo y documentado.
 * **Sección D:** Código Java de la aplicación con manejo de ciclo de vida y eventos táctiles.
 * **Sección E:** Conclusiones y recomendaciones técnicas.
-* **Sección F:** Guion y ficha técnica de sustentación con asignación de roles para Sandra Millan y Miguel Mendoza, junto con el banco de preguntas típicas del tutor Víctor Fabián Castro Pérez.
+* **Sección F:** Guion y ficha técnica de sustentación con asignación de roles para Sandra Millan, Miguel Mendoza y Juan Muñoz, junto con el banco de preguntas típicas del tutor Víctor Fabián Castro Pérez.
 
 ---
 
